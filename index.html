@@ -25,6 +25,99 @@
 
 <body>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<div class="bg-stone-100 px-4 py-2">
+  <div class="mx-auto flex max -w-3xl items-center justify-center">
+    <button
+      class="swiper-prev-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition"
+      aria-label="Previous Slide"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 rtl:rotate-180"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="text-center text-sm font-medium">
+            Hot Summer Offer Upto
+            <a href="#sum" class="block underline sm:inline-block">
+              70% OFF
+            </a>
+            on All Products
+          </p>
+        </div>
+
+        <div class="swiper-slide">
+          <p class="text-center text-sm font-medium">
+            Do You Like Oversized CLothes?
+            <a href="p/official_merch_black" class="block underline sm:inline-block">
+              Check out our new march
+            </a>
+          </p>
+        </div>
+
+        <!-- <div class="swiper-slide">
+          <p class="text-center text-sm font-medium">
+            Love Laravel?
+            <a href="#" class="block underline sm:inline-block">
+              Check out this new course!
+            </a>
+          </p>
+        </div> -->
+      </div>
+    </div>
+
+    <button
+      class="swiper-next-button hidden hover:text-gray-500 sm:block sm:rounded sm:text-gray-700 sm:transition"
+      aria-label="Next Slide"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 rtl:rotate-180"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  new Swiper('.swiper', {
+    effect: 'fade',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      prevEl: '.swiper-prev-button',
+      nextEl: '.swiper-next-button',
+    },
+  })
+</script>
+
 
 
   <!-- Navbar -->
@@ -50,31 +143,15 @@
   </header>
 
 
-  <!-- Sales Area -->
-
-  <!-- <section class="text-gray-400 body-font">
-    <div class="container px-5 py-16 mx-auto flex flex-wrap">
-      <div class="lg:w-1/2 mx-auto">
-        <div class="flex flex-wrap w-full bg-red-800 py-32 px-32 relative mb-4">
-          <div class="text-center relative z-10 w-full">
-            <h2 class="text-2xl text-white font-medium title-font mb-2">Sales Area</h2>
-            <p class="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p>
-                <a class="mt-3 text-indigo-300 inline-flex items-center">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section> -->
 
   <!-- New Launch -->
 
-  <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container py-1 mx-auto flex flex-wrap">
+  <section class="text-gray-400  body-font" style="background-color: #d9d9d9;" >
+    <div class="container  mx-auto flex flex-wrap">
       <div class="lg:w-3/2 mx-auto">
-        <div class="flex flex-wrap w-full relative mb-4">
+        <div class="flex flex-wrap w-full relative">
           <a href="p/official_merch_black">
-            <img alt="gallery" class="w-full  h-full" src="img/NEW LAUNCH.png">
+            <img alt="gallery" class="w-full h-full" src="img/NEW LAUNCH.png">
           </a>
         </div>
       </div>
@@ -244,7 +321,7 @@
   </div>
     -->
 
-      <section>
+      <section id="sum">
         <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
           <header class="text-center">
             <h2 class="text-xl font-bold text-white sm:text-3xl">
@@ -349,6 +426,266 @@
       </section>
       
 
+<!--FAQ-->
+
+
+<div class="space-y-4 pb-12">
+  <header class="text-center">
+    <h2 class="text-xl font-bold text-white sm:text-3xl pb-4">
+      How We Can Help You 🙏
+    </h2>
+  </header>
+  <details
+    class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+    open
+  >
+    <summary class="flex items-center justify-between cursor-pointer">
+      <h2 class="text-lg font-medium text-gray-900">
+        How do I find the right size for me?
+      </h2>
+
+      <span
+        class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <p class="mt-4 leading-relaxed text-gray-700">
+      We recommend checking our size chart before making a purchase. You can find it on the product page or contact our customer service for assistance.
+    </p>
+  </details>
+
+  <details
+    class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+  >
+    <summary class="flex items-center justify-between cursor-pointer">
+      <h2 class="text-lg font-medium text-gray-900">
+        What materials do you use for your clothing?
+      </h2>
+
+      <span
+        class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <p class="mt-4 leading-relaxed text-gray-700">
+      We use a variety of high-quality materials depending on the product, including cotton, polyester, rayon, and more. You can find the specific material on the product page.
+    </p>
+  </details>
+
+  <details
+  class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+>
+  <summary class="flex items-center justify-between cursor-pointer">
+    <h2 class="text-lg font-medium text-gray-900">
+      How do I care for my clothing?
+    </h2>
+
+    <span
+      class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </span>
+  </summary>
+
+  <p class="mt-4 leading-relaxed text-gray-700">
+    We recommend following the care instructions on the product label, which includes washing instructions and temperature guidelines. We also recommend avoiding harsh chemicals or bleach when washing.
+  </p>
+</details>
+
+  <details
+  class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+>
+  <summary class="flex items-center justify-between cursor-pointer">
+    <h2 class="text-lg font-medium text-gray-900">
+      How long will it take for my order to arrive?
+    </h2>
+
+    <span
+      class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </span>
+  </summary>
+
+  <p class="mt-4 leading-relaxed text-gray-700">
+    Delivery times vary depending on your location and shipping method. We typically process orders within 1-3 business days and provide an estimated delivery date at checkout.
+</details>
+
+<details
+class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+>
+<summary class="flex items-center justify-between cursor-pointer">
+  <h2 class="text-lg font-medium text-gray-900">
+    Can I cancel my order?
+  </h2>
+
+  <span
+    class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </span>
+</summary>
+
+<p class="mt-4 leading-relaxed text-gray-700">
+  You may be able to cancel your order if it has not yet been shipped. Please contact our customer service team as soon as possible to request a cancellation.
+</p>
+</details>
+
+<details
+class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+>
+<summary class="flex items-center justify-between cursor-pointer">
+  <h2 class="text-lg font-medium text-gray-900">
+    Do you offer any promotions or discounts?
+  </h2>
+
+  <span
+    class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </span>
+</summary>
+
+<p class="mt-4 leading-relaxed text-gray-700">
+  Yes, we occasionally offer promotions or discounts. Please sign up for our newsletter or follow us on social media to stay updated on our latest offers.
+</p>
+</details>
+
+<details
+class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+>
+<summary class="flex items-center justify-between cursor-pointer">
+  <h2 class="text-lg font-medium text-gray-900">
+    How can I contact customer service?
+  </h2>
+
+  <span
+    class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </span>
+</summary>
+
+<p class="mt-4 leading-relaxed text-gray-700">
+  You can contact us through our website's contact form, email, or phone number. Our customer service team is available to assist you during business hours.
+</p>
+</details>
+
+
+<details
+class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+>
+<summary class="flex items-center justify-between cursor-pointer">
+  <h2 class="text-lg font-medium text-gray-900">
+    Can I return or exchange my order?
+  </h2>
+
+  <span
+    class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </span>
+</summary>
+
+<p class="mt-4 leading-relaxed text-gray-700">
+  Yes, we offer returns and exchanges. To be eligible for a return or exchange, the item must be unused, unworn, and in the original packaging with all tags attached. Please note that shipping costs for returns or exchanges are the responsibility of the customer, unless the item is defective or there was an error on our end.
+</p>
+</details>
+
+</div>
+
 
 <!--Footer-->
 
@@ -398,12 +735,12 @@
           </li>
           <li>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a class="text-gray-400 hover:text-white" target="_blank" href="/threads_stripes">
+              <a class="text-gray-400 hover:text-white" target="_blank" href="https://www.facebook.com/threadsstripes/">
                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-400 hover:text-white" target="_blank" href="/threads_stripes">
+              <a class="ml-3 text-gray-400 hover:text-white" target="_blank" href="https://twitter.com/threads_stripes">
                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
@@ -414,7 +751,7 @@
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-gray-400 hover:text-white" target="_blank" href="/threads_stripes">
+                            <a class="ml-3 text-gray-400 hover:text-white" target="_blank" href="https://www.linkedin.com/company/threadsstripes">
                 <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
                   <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                   <circle cx="4" cy="4" r="2" stroke="none"></circle>
