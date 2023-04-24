@@ -14,6 +14,22 @@
     }
   </style>
 
+  <!--Script-->
+  <script>
+const copyBtn = document.getElementById("copy-btn");
+
+copyBtn.addEventListener("click", () => {
+  const url = window.location.href;
+
+  navigator.clipboard.writeText(url).then(() => {
+    console.log(`Copied URL to clipboard: ${url}`);
+  }).catch((error) => {
+    console.error(`Error copying URL to clipboard: ${error}`);
+  });
+});
+
+</script>
+
   <!--Link-->
   <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
@@ -163,22 +179,19 @@
               <legend class="mb-1 text-sm font-medium text-white">Color</legend>
 
               <div class="flex flex-wrap gap-1">
-                <label for="color_tt" class="cursor-pointer">
+                <label for="color_tt">
+                  <!-- class="cursor-pointer" -->
                   <input type="radio" name="color" id="color_tt" class="peer sr-only" />
 
                   <span
-                    class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-white peer-checked:text-black text-white">
+                    class="group inline-block rounded-full border px-3 py-1 text-xs font-medium bg-white text-black">
                     Black
                   </span>
                 </label>
 
-                <label for="color_fr" class="cursor-pointer">
+                <label for="color_fr">
                   <input type="radio" name="color" id="color_fr" class="peer sr-only" />
 
-                  <span
-                    class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-white peer-checked:text-black text-white">
-                    White
-                  </span>
                 </label>
               </div>
             </fieldset>
@@ -189,29 +202,30 @@
               <div class="flex flex-wrap gap-1">
 
 
-                <label for="size_s" class="cursor-pointer">
+                <label for="size_s">
                   <input type="radio" name="size" id="size_s" class="peer sr-only" />
 
                   <span
-                    class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-white peer-checked:text-black text-white">
+                    class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium bg-white text-black">
+                    <!-- bg-white text-black -->
                     S
                   </span>
                 </label>
 
-                <label for="size_m" class="cursor-pointer">
-                  <input type="radio" name="size" id="size_m" class="peer sr-only" />
+                <label for="size_m">
+                  <input  name="size" id="size_m" class="peer sr-only" />
 
                   <span
-                    class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-white peer-checked:text-black text-white">
+                    class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium bg-white text-black">
                     M
                   </span>
                 </label>
 
-                <label for="size_l" class="cursor-pointer">
+                <label for="size_l">
                   <input type="radio" name="size" id="size_l" class="peer sr-only" />
 
                   <span
-                    class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-white peer-checked:text-black text-white">
+                    class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium bg-white text-black">
                     L
                   </span>
                 </label>
@@ -236,31 +250,32 @@
                 Buy Now
               </button> -->
 
-              <a class="w-full group relative inline-block overflow-hidden border border-red-600 px-6 py-3 focus:outline-none focus:ring"
-                href="">
+              <a class="w-full group relative inline-block overflow-hidden border border-yellow-600 px-6 py-3 focus:outline-none focus:ring"
+                href="https://forms.gle/jLrmy5Fv3x7w1fEp7">
                 <span
-                  class="absolute inset-y-0 left-0 w-[2px] bg-red-600 transition-all group-hover:w-full group-active:bg-red-500"></span>
+                  class="absolute inset-y-0 left-0 w-[2px] bg-yellow-600 transition-all group-hover:w-full group-active:bg-yellow-500"></span>
 
                 <span
-                  class="font-bold uppercase tracking-wide relative text-sm text-red-600 transition-colors group-hover:text-white">
-                  Buy Now
+                  class="font-bold uppercase tracking-wide relative text-sm text-yellow-600 transition-colors group-hover:text-white">
+                  Pre Order
                 </span>
               </a>
 
-              <a class="w-full group relative inline-block overflow-hidden border border-gray-600 px-8 py-3 focus:outline-none focus:ring"
-                href="">
+              <a class="w-full group relative inline-block overflow-hidden border border-gray-600 px-8 py-3 focus:outline-none focus:ring" >
                 <span
                   class="absolute inset-y-0 right-0 w-[2px] bg-gray-600 transition-all group-hover:w-full group-active:bg-gray-500"></span>
 
-                <span class="font-bold uppercase tracking-wide relative text-sm text-gray-400 transition-colors group-hover:text-white">
-                  Add To Cart
-                </span>
+                <button class="font-bold uppercase tracking-wide relative text-sm text-gray-400 transition-colors group-hover:text-white" id="copy-btn">
+                  Share
+            </button>
               </a>
 
               <!-- <button type="button"
                 class="w-full rounded border border-gray-300 bg-gray-100 px-6 py-3 text-sm font-bold uppercase tracking-wide">
                 Add To Cart
               </button> -->
+
+
             </div>
           </form>
         </div>
