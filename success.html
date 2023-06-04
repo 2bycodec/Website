@@ -15,7 +15,7 @@
     </style>
 
     <!--Link-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,7 +33,10 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
+
+  <div id="loading"></div>
+
 
 
     <!-- Navbar -->
@@ -173,6 +176,20 @@
         </div>
       </footer>
 
-</body>
 
+<script>
+  // $(document).ready(function(){
+    // 	$('div#loading').removeAttr('id');
+  // });
+  var preloader = document.getElementById("loading");
+  // window.addEventListener('load', function(){
+  // 	preloader.style.display = 'none';
+  // 	})
+
+  function myFunction(){
+    preloader.style.display = 'none';
+  };
+</script>
+
+</body>
 </html>
