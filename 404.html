@@ -22,6 +22,17 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1QBM191RH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P1QBM191RH');
+</script>
+
   </head>
 
   <body onload="myFunction()">
@@ -38,7 +49,7 @@
 
         <p class="mt-4 text-gray-500 pb-4">We can't find that page.</p>
 
-        <a
+        <!-- <a
           class="group relative inline-block focus:outline-none focus:ring"
           href="./"
         >
@@ -51,7 +62,19 @@
           >
           Back To Shopping
           </span>
-        </a>
+        </a> -->
+
+
+        <a href="./">
+          <button  class="flex mx-auto relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
+            <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
+            <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
+            <span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
+            <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Back To Shopping</span>
+            </button>
+          </a>
       </div>
     </div>
 
